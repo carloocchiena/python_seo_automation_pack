@@ -46,7 +46,6 @@ def kw_sentiment(doc):
             idf_score[k] =  check_sent(k, total_sentences)
         else:
             idf_score[k] = 1
-    
 
     # dividing by total_word_length for each dictionary element
     tf_score.update((x, y/int(total_word_length)) for x, y in tf_score.items())
